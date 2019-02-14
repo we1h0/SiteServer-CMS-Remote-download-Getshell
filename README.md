@@ -32,6 +32,20 @@ python poc.py -f url.txt
 
 Ps:注意最后面没/
 
+### 搜索引擎关键字:
+
+inurl:/sitefiles/services
+
+inurl:/sitesever/login.aspx
+
+### 临时修复方案
+修改 
+
+> C:/WebSite/SiteFiles/Configuration/Configuration.config
+
+secretKey的值
+
+
 ### downloadUrl加密工具
 #### C#
 [VSCODE配置C#](https://blog.csdn.net/qq_40346899/article/details/80955788)
@@ -139,17 +153,3 @@ namespace EncryptApplication
 ```
 
 ![avatar](https://raw.githubusercontent.com/zhaoweiho/SiteServerCMS-Remote-download-Getshell/master/img/1818119636.jpg)
-
-### 搜索引擎关键字:
-
-inurl:/sitefiles/services
-
-inurl:/sitesever/login.aspx
-
-### 临时修复方案
-修改 
-
-> C:/WebSite/SiteFiles/Configuration/Configuration.config
-
-secretKey的值
-
