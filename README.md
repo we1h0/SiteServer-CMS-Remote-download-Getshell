@@ -1,4 +1,4 @@
-# SiteServerCMS-Getshell-
+# SiteServerCMS-Remote-download-Getshell
 SiteServerCMS 5.0远程模板下载Getshell漏洞
 
 Author:1u0hun
