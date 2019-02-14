@@ -55,6 +55,7 @@ inurl:/sitesever/login.aspx
 secretKey的值
 
 > 2.更改后台地址
+
 > 3.更改(或移除模板下载功能)/SiteServer/Ajax/ajaxOtherService.aspx路径
 
 ### downloadUrl加密工具
