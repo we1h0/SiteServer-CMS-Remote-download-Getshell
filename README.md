@@ -7,7 +7,7 @@ From:https://www.freebuf.com/articles/web/195105.html
 
 0x00 漏洞概述
 
-通过了解，得知被攻击的网站使用的是siteserver cms，为开源免费cms框架，官网https://www.siteserver.cn/
+通过了解，得知被攻击的网站使用的是siteserver cms，为开源免费cms框架，[官网](https://www.siteserver.cn/)
 捕获到的“0 day”是通过远程模板下载getshell，漏洞缺陷是由于后台模板下载位置未对用户权限进行校验，且 ajaxOtherService中的downloadUrl参数可控，导致getshell，目前经过测试发现对5.0版本包含5.0以下通杀
 
 
@@ -32,8 +32,9 @@ image.png
 
 这里使用python脚本去除混淆，恢复原DES密文。image.png
 
-程序去除混淆之后调用DES模块并实例化encryptor对象调用DesDecrypt解密函数，在实例化对象时将inputString和secreKey传入。使用菜鸟教程
-> http://www.runoob.com/
+程序去除混淆之后调用DES模块并实例化encryptor对象调用DesDecrypt解密函数，在实例化对象时将inputString和secreKey传入。使用
+[菜鸟教程](http://www.runoob.com/)
+
 调试运行下核心的加解密代码传入参数_encryptKey和_inputString加密代码调试如下_inputString传入任意黑客构造的地址，_encryptKey传入密钥。
 
 
