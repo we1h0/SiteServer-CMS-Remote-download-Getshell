@@ -13,7 +13,7 @@ SiteServerCMS 远程模板下载Getshell漏洞
 
 Author:1u0hun
 
-From : https://www.freebuf.com/articles/web/195105.html
+[简记野生应急捕获到的siteserver远程模板下载Getshell漏洞] (https://www.freebuf.com/articles/web/195105.html)
 
 
 
