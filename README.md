@@ -27,7 +27,7 @@ image.png
 <br>
 程序去除混淆之后调用DES模块并实例化encryptor对象调用DesDecrypt解密函数，在实例化对象时将inputString和secreKey传入。使用菜鸟教程http://www.runoob.com/调试运行下核心的加解密代码传入参数_encryptKey和_inputString加密代码调试如下_inputString传入任意黑客构造的地址，_encryptKey传入密钥。
 <br>
-<code>
+```C#
 using System; 
 using System.IO; 
 using System.Security.Cryptography; 
@@ -53,7 +53,7 @@ namespace EncryptApplication
       catch (Exception error) { _noteMessage = error.Message; } 
  } } }
 f1.png
-</code>
+```
 <br>
 执行之后获取其加密downloadurl如下：ZjYIub/YxA3QempkVBK4CoiVo3M607H/TBf7F0aPcUE=， 使用python代码混淆该url，得到最后利用的downloadurlf2.png
 <br>
