@@ -146,7 +146,7 @@ inurl:/sitefiles/services
 
 inurl:/sitesever/login.aspx
 
-### 修复方案
+### 临时修复方案
 修改 
 
 > C:/WebSite/SiteFiles/Configuration/Configuration.config
