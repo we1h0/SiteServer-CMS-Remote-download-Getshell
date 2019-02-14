@@ -19,7 +19,9 @@ python poc.py -f url.txt
 
 Ps:注意最后面没/
 
-
+搜索引擎关键字:
+inurl:/sitefiles/services
+inurl:/sitesever/login.aspx
 ## References
 
 Author:1u0hun
