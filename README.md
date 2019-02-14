@@ -1,6 +1,6 @@
 # SiteServerCMS-Remote-download-Getshell-vulnerability
 
-SiteServerCMS 5.0远程模板下载Getshell漏洞
+SiteServerCMS 远程模板下载Getshell漏洞
 
 
 ## Affected Version
