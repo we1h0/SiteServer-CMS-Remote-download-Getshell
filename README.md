@@ -68,14 +68,16 @@ namespace EncryptApplication
 f1.png
 执行之后获取其加密downloadurl如下：
 > ZjYIub/YxA3QempkVBK4CoiVo3M607H/TBf7F0aPcUE=
+
 使用python代码混淆该url，得到最后利用的downloadurlf2.png
 
 
 混淆之后的downloadurl为：
+
 > ZjYIub0slash0YxA3QempkVBK4CoiVo3M607H0slash0TBf7F0aPcUE0equals00secret0
 
 解密的步骤与加密相反，首先将混淆后的下载地址去除混淆。去混淆py代码去混淆后密文如下：
-<br>
+
 > ZjYIub/YxA2nYLIZNDeUmdd3GBhwbuBXI4s2bpH2CVmtg2H/QGZ4+ZW0iiVbi/MDytVnpZKliDw=
 
 解密函数调试如下，传入_inputString和密钥 
