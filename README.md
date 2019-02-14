@@ -13,6 +13,7 @@ SiteServerCMS 4.x
 Author:We1h0@PoxTeam
 
 python poc.py -u http://localhost
+![avatar](https://raw.githubusercontent.com/zhaoweiho/SiteServerCMS-Remote-download-Getshell/master/img/494367940.jpg)
 
 python poc.py -f url.txt
 
