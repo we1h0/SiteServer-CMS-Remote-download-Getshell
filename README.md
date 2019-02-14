@@ -6,7 +6,8 @@ Author:1u0hun
 From:https://www.freebuf.com/articles/web/195105.html
 
 0x00 漏洞概述<br>
-通过了解，得知被攻击的网站使用的是siteserver cms，为开源免费cms框架，官网https://www.siteserver.cn/，捕获到的“0 day”是通过远程模板下载getshell，漏洞缺陷是由于后台模板下载位置未对用户权限进行校验，且 ajaxOtherService中的downloadUrl参数可控，导致getshell，目前经过测试发现对5.0版本包含5.0以下通杀
+通过了解，得知被攻击的网站使用的是siteserver cms，为开源免费cms框架，官网https://www.siteserver.cn/
+捕获到的“0 day”是通过远程模板下载getshell，漏洞缺陷是由于后台模板下载位置未对用户权限进行校验，且 ajaxOtherService中的downloadUrl参数可控，导致getshell，目前经过测试发现对5.0版本包含5.0以下通杀
 <br>
 0x01 漏洞分析<br>
 可以看到利用的是ajaxOtherService.cs中的SiteTemplateDownload功能模块，使用notepad++搜索到该功能模块如下。发现在ajaxOtherService.cs文件中确实存在函数调用接口SiteTemplateDownload(stringdownloadUrl, string directoryName, string userKeyPrefix)image.png
@@ -25,7 +26,9 @@ image.png
 <br>
 这里使用python脚本去除混淆，恢复原DES密文。image.png
 <br>
-程序去除混淆之后调用DES模块并实例化encryptor对象调用DesDecrypt解密函数，在实例化对象时将inputString和secreKey传入。使用菜鸟教程http://www.runoob.com/调试运行下核心的加解密代码传入参数_encryptKey和_inputString加密代码调试如下_inputString传入任意黑客构造的地址，_encryptKey传入密钥。
+程序去除混淆之后调用DES模块并实例化encryptor对象调用DesDecrypt解密函数，在实例化对象时将inputString和secreKey传入。使用菜鸟教程
+> http://www.runoob.com/
+调试运行下核心的加解密代码传入参数_encryptKey和_inputString加密代码调试如下_inputString传入任意黑客构造的地址，_encryptKey传入密钥。
 <br>
 ```C#
 using System; 
@@ -55,11 +58,15 @@ namespace EncryptApplication
 f1.png
 ```
 <br>
-执行之后获取其加密downloadurl如下：ZjYIub/YxA3QempkVBK4CoiVo3M607H/TBf7F0aPcUE=， 使用python代码混淆该url，得到最后利用的downloadurlf2.png
+执行之后获取其加密downloadurl如下：
+> ZjYIub/YxA3QempkVBK4CoiVo3M607H/TBf7F0aPcUE=
+使用python代码混淆该url，得到最后利用的downloadurlf2.png
 <br>
-混淆之后的downloadurl为：ZjYIub0slash0YxA3QempkVBK4CoiVo3M607H0slash0TBf7F0aPcUE0equals00secret0，解密的步骤与加密相反，首先将混淆后的下载地址去除混淆。去混淆py代码去混淆后密文如下：
+混淆之后的downloadurl为：
+> ZjYIub0slash0YxA3QempkVBK4CoiVo3M607H0slash0TBf7F0aPcUE0equals00secret0
+解密的步骤与加密相反，首先将混淆后的下载地址去除混淆。去混淆py代码去混淆后密文如下：
 <br>
-ZjYIub/YxA2nYLIZNDeUmdd3GBhwbuBXI4s2bpH2CVmtg2H/QGZ4+ZW0iiVbi/MDytVnpZKliDw=，
+> ZjYIub/YxA2nYLIZNDeUmdd3GBhwbuBXI4s2bpH2CVmtg2H/QGZ4+ZW0iiVbi/MDytVnpZKliDw=
 <br>
 解密函数调试如下，传入_inputString和密钥 
 f3.png
