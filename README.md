@@ -49,7 +49,7 @@ PassWord:admin
 
 inurl:/sitefiles/services
 
-inurl:/sitesever/login.aspx
+inurl:/siteserver/login.aspx
 
 ### 临时修复方案
 修改 
