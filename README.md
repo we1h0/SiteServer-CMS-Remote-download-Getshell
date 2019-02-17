@@ -58,9 +58,9 @@ inurl:/siteserver/login.aspx
 
 secretKey的值
 
-> 2.更改后台地址
-
-> 3.更改(或移除模板下载功能)/SiteServer/Ajax/ajaxOtherService.aspx路径
+> 2.然后修改web.config下的DatabaseType/ConnectionString 都是通过下面的加密工具进行加密的字符串.
+> 3.更改后台地址
+> 4.更改(或移除模板下载功能)/SiteServer/Ajax/ajaxOtherService.aspx路径
 
 ### downloadUrl加密工具
 #### C#
