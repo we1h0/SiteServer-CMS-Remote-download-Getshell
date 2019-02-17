@@ -54,12 +54,12 @@ inurl:/siteserver/login.aspx
 ### 临时修复方案
 修改 
 
-> 1.C:/WebSite/SiteFiles/Configuration/Configuration.config
+> 1.修改C:/WebSite/SiteFiles/Configuration/Configuration.config文件里secretKey的值
 
-secretKey的值
+> 2.然后修改web.config下的DatabaseType/ConnectionString值都是通过下面的加密工具进行加密的字符串.
 
-> 2.然后修改web.config下的DatabaseType/ConnectionString 都是通过下面的加密工具进行加密的字符串.
 > 3.更改后台地址
+
 > 4.更改(或移除模板下载功能)/SiteServer/Ajax/ajaxOtherService.aspx路径
 
 ### downloadUrl加密工具
