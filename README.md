@@ -56,7 +56,7 @@ inurl:/siteserver/login.aspx
 
 > 1.修改C:/WebSite/SiteFiles/Configuration/Configuration.config文件里secretKey的值
 
-> 2.然后修改web.config下的DatabaseType/ConnectionString值都是通过下面的加密工具进行加密的字符串.
+> 2.然后修改根目录web.config下的DatabaseType/ConnectionString值都是通过下面的加密工具进行加密的字符串.
 
 > 3.更改后台地址
 
