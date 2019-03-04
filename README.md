@@ -112,7 +112,8 @@ str_decry = str_decry.replace("+", "0add0").replace("=", "0equals0").replace("&"
 print str_decry
 ```
 
-![avatar](https://raw.githubusercontent.com/zhaoweiho/SiteServerCMS-Remote-download-Getshell/master/img/1213922991.jpg)
+
+![avatar](https://raw.githubusercontent.com/zhaoweiho/SiteServerCMS-Remote-download-Getshell/master/img/1853999564.jpg)
 
 得出转义后的下载链接，修改Poc.py 
 
@@ -132,7 +133,7 @@ print str_decry
 
 ```
 
-![avatar](https://raw.githubusercontent.com/zhaoweiho/SiteServerCMS-Remote-download-Getshell/master/img/1853999564.jpg)
+![avatar](https://raw.githubusercontent.com/zhaoweiho/SiteServerCMS-Remote-download-Getshell/master/img/1213922991.jpg)
 
 2.再用c#以下的代码还原回默认下载链接
 
