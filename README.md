@@ -18,6 +18,9 @@ Author:1u0hun
 
 
 ### Affected Version
+
+SiteServerCMS 6.x（需要且SecretKey.Tips:查看web.config获取SecretKey，因为6.x的密钥是随机生成的，这里可以用作维持权限后门使用，即通过其他手段进去了，但管理员根据日志找到你进去的漏洞，修复后，可以再次通过此漏洞获取Webshell.或者你有其他办法能把SecretKey的值读取出来也可以组合使用.突然间关注这漏洞的人多了,这行属于另外再添加的.2020/02/26.）
+
 SiteServerCMS 5.x
 
 SiteServerCMS 4.x(测试没通过)
